@@ -1,0 +1,20 @@
+  139  yum install net-tools
+  140  pip install ansible
+  141  python
+  142  sudo yum install epel-releasesudo yum install epel-release
+  143  sudo yum install epel-release && sudo yum install python-pip
+  144  pip install ansible
+  145  ansible-playbook
+  146  git clone https://github.com/subinav2711/ansible.git
+  147  yum intsall git -y
+  148  yum install git -y
+  149  git clone https://github.com/subinav2711/ansible.git
+  150  ls
+  151  cd ansible/
+  152  ls
+  153  ansible-playbook createFile.yml
+  154  cd /tmp/yallo
+  155  cd /tmp/
+  156  ls
+  157  vi yallo
+  158  history
