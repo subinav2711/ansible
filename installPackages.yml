@@ -1,12 +1,12 @@
 - hosts: localhost
   tasks:
       - name: install httpd
-       yum:
+        yum:
          name: httpd
          state: present
       - name: copy html
-         copy: src=/root/files/index.html dest=/var/www/html/index.html
+        copy: src=/root/files/index.html dest=/var/www/html/index.html
       - name: start apache
-       service:
+        service:
            name: httpd
            state: restarted
