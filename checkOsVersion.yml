@@ -1,6 +1,6 @@
-- debug:
-    msg: "{{ localhost.ansible_distribution }}"
-- debug:
-    msg: "{{ localhost.ansible_distribution_major_version }}"
-- debug:
-    msg: "{{ localhost.ansible_distribution_version }}"
+- name: OS family
+  hosts: localhost
+
+  tasks:
+    - name: print OS Family
+      debug: var=ansible_os_family
