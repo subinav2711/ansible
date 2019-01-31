@@ -1,0 +1,6 @@
+- debug:
+    msg: "{{ localhost.ansible_distribution }}"
+- debug:
+    msg: "{{ localhost.ansible_distribution_major_version }}"
+- debug:
+    msg: "{{ localhost.ansible_distribution_version }}"
