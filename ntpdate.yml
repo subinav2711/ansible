@@ -1,5 +1,5 @@
 - hosts: localhost
   name: install ntpdate
     package:
-      name: ntpdate
+       name: ntpdate
       state: present
