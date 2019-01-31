@@ -18,3 +18,5 @@
   156  ls
   157  vi yallo
   158  history
+
+  firewall-cmd --permanent --zone=public --add-service=http
