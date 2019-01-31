@@ -4,3 +4,4 @@
   tasks:
     - name: print OS Family
       debug: var=ansible_os_family
+      debug: var=ansible_distribution
