@@ -8,7 +8,7 @@
   146  git clone https://github.com/subinav2711/ansible.git
   147  yum intsall git -y
   148  yum install git -y
-  149  git clone https://github.com/subinav2711/ansible.git
+  149
   150  ls
   151  cd ansible/
   152  ls
@@ -18,3 +18,5 @@
   156  ls
   157  vi yallo
   158  history
+
+  firewall-cmd --permanent --zone=public --add-service=http
