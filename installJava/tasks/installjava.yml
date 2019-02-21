@@ -1,0 +1,8 @@
+- name: Install Oracle java 8
+  become: yes
+  apt: name={{item}} state=latest
+  with_items:
+    - oracle-java8-installer
+    - ca-certificates
+    - oracle-java8-set-default
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'

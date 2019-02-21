@@ -1,0 +1,4 @@
+- name: add oracle repo
+  become: yes
+  apt_repository: repo='ppa:webupd8team/java'
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
