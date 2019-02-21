@@ -1,12 +1,13 @@
 - hosts: slave
-  - name: install repo
-    include_tasks: installrepo.yml
+  tasks:
+    - name: install repo
+      include_tasks: installrepo.yml
 
-  - name: add repo
-    include_tasks: addrepo.yml
+    - name: add repo
+      include_tasks: addrepo.yml
 
-  - name: accept license
-    include_tasks: license.yml
+    - name: accept license
+      include_tasks: license.yml
 
-  - name: install oracle java 8
-    include_tasks: installjava.yml
+    - name: install oracle java 8
+      include_tasks: installjava.yml
