@@ -1,0 +1,7 @@
+- hosts: slave
+  tasks:
+    - name: Copy file
+      copy: src=../files/test.py dest=/opt/test.py owner=root group=root mode=755
+
+    - name: Execute script
+      command: /opt/test.py
