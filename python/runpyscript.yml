@@ -1,7 +1,12 @@
 - hosts: slave
   tasks:
     - name: Copy file
-      copy: src=../files/test.py dest=/opt/test.py owner=root group=root mode=755
+      copy:
+         src: /root/ansible/python/pyscript/test.py
+         dest: /opt/test.py
+         owner: root
+         group: root
+         mode: 0644
 
     - name: Execute script
       command: /opt/test.py
